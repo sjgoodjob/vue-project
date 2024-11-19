@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // or "ES6" if your environment supports it
+    "lib": ["ES2015", "DOM"], // Include ES2015 to enable Promise and async/await
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
+
+
+
