@@ -170,7 +170,7 @@ const submitForm = async () => {
   form.value.machineVersions.forEach((version) => formData.append('machineVersions[]', version));
   form.value['user-profile'].forEach((profile) => formData.append('user-profile[]', profile));
   formData.append('DocumentUpload[documentFile]', form.value.fileList[0].raw);
-  console.log("File received in handleBeforeUpload:", form.value.fileList[0].raw); // 调试日志
+
 
   try {
     const response = await axios.post('/v1/documents/upload', formData, {
